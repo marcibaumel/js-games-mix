@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react'
-//import ScoreBoard from './components/ScoreBoard'
+import ScoreBoard from './components/ScoreBoard'
 import blueCandy from './images/blue-candy.png'
 import greenCandy from './images/green-candy.png'
 import orangeCandy from './images/orange-candy.png'
@@ -188,7 +188,7 @@ const App = () => {
                     />
                 ))}
             </div>
-           
+            <ScoreBoard score={scoreDisplay}/>
         </div>
     )
 }
