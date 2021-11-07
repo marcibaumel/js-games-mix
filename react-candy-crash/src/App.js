@@ -13,14 +13,18 @@ const candyColors = [
 const App = () => {
     const [currentColorArrangement, setCurrentColorArrangement] = useState([])
 
-    const createBoard = () =>{
-    const randomColorArrangement = [];
-
-    for(let i = 0; i<width*width; i++){
-        const randomNumberFrom0To5 = Math.floor(Math.random() * candyColors.length);
-        const randomColor = candyColors[randomNumberFrom0To5];
-        randomColorArrangement.push(randomColor);
+    const checkForColumnOfThree = () =>{
+        
     }
+
+    const createBoard = () =>{
+        const randomColorArrangement = [];
+
+        for(let i = 0; i<width*width; i++){
+            const randomNumberFrom0To5 = Math.floor(Math.random() * candyColors.length);
+            const randomColor = candyColors[randomNumberFrom0To5];
+            randomColorArrangement.push(randomColor);
+        }
         setCurrentColorArrangement(randomColorArrangement);
     }
 

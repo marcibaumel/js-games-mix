@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8b61e11-4da0-4b93-9df4-489f3af74d7d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/images/blank.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/blue-candy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/green-candy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/orange-candy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/purple-candy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/red-candy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/yellow-candy.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +61,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636190867762</updated>
-      <workItem from="1636190869518" duration="2618000" />
+      <workItem from="1636190869518" duration="2677000" />
+      <workItem from="1636278817409" duration="1133000" />
     </task>
     <servers />
   </component>
@@ -79,6 +79,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
