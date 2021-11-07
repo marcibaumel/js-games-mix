@@ -13,6 +13,8 @@ const candyColors = [
 const App = () => {
     const [currentColorArrangement, setCurrentColorArrangement] = useState([])
 
+    const [squareBeingDragged, setSquareBeingDragged] = useState(null)
+    const [squareBeingReplaced, setSquareBeingReplaced] = useState(null)
 
     const checkForColumnOfThree = () =>{
         for(let i = 0; i< 47; i++){
@@ -81,6 +83,26 @@ const App = () => {
         }
     }
 
+    const dragStart = (e) =>{
+        console.log(e.target)
+        setSquareBeingDragged(e.target)
+    }
+
+    const dragDrop = (e) =>{
+        console.log(e.target)
+        setSquareBeingReplaced(e.target)
+    }
+
+    const dragEnd = (e) =>{
+        console.log("drag end")
+
+        const squareBeingDraggedId = parseInt(squareBeingDragged.getAttribute('data-id'))
+        const squareBeingReplaceId = parseInt(squareBeingReplaced.getAttribute('data-id'))
+
+        console.log('Dragged id: ', squareBeingDraggedId)
+        console.log('Replaced id: ', squareBeingReplaceId)
+    }
+
     const createBoard = () =>{
         const randomColorArrangement = [];
 
@@ -108,7 +130,7 @@ const App = () => {
         return() => clearInterval(timer)
     }, [checkForColumnOfFour, checkForRowOfFour, checkForColumnOfThree, checkForRowOfThree, moveIntoSquareBelow, currentColorArrangement])
 
-    console.log(currentColorArrangement)
+    //console.log(currentColorArrangement)
 
   return (
     <div className="app">
@@ -118,6 +140,14 @@ const App = () => {
                     key={index}
                     style = {{backgroundColor: candyColors}}
                     alt={candyColors}
+                    data-id = {index}
+                    draggable={true}
+                    onDragStart={dragStart}
+                    onDragOver={(e) =>e.preventDefault()}
+                    onDragEnter = {(e) =>e.preventDefault()}
+                    onDragLeave={(e) =>e.preventDefault()}
+                    onDrop={dragDrop}
+                    onDragEnd={dragEnd}
                 />
                 ))}
         </div>
